@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% block content %}
+
+<form name="register_form" action="/incomefinder" method="post">
+
+<br><br><br>
+<center><h1>FARMER LOAN PREDICTION</h1></center>
+<center><table align=”center” cellspacing=”3″ cellpadding="5"  >
+
+    
+<tr>
+<td align=”right”><strong>State</strong></td>
+<td><input type=”text” name="st" placeholder="Enter your State"required></td>
+</tr>
+<tr>
+<td align=”right”><strong>District</strong></td>
+<td><input type=”text” name="dis" placeholder="Enter your district"required></td>
+</tr>
+<tr>
+<td align=”right”><strong>Crop you like to grow</strong></td>
+<td><input type=”text” name="crop" placeholder="Enter the Crop to grow"required></td>
+</tr>
+<tr>
+<td align=”right”><strong>Land size</strong></td>
+<td><input type=”number” name="land" placeholder="Enter the land size"required></td>
+</tr>
+<tr>
+<td align=”right”><strong>Loan Amount</strong></td>
+<td><input type=”number” name="loan_req" placeholder="Enter the loan amount"required></td>
+</tr>
+<tr>
+<td align=”right”><strong>Loan Scheme</strong></td>
+    <td>
+        <select name = "scheme" placeholder="Enter the loan scheme" required>
+            <option value="1">Kissan Credit Card Scheme</option>
+        </select>
+    </td>
+</tr>
+<tr>
+<td align=”right”><strong>Loan duration in months</strong></td>
+<td><input type=”number” name="duration" placeholder="Enter the duration of loan"required></td>
+</tr>
+</table></center>
+<input type="submit" name="know_income" value="Know your income">
+<br>
+</form>
+    
+{% endblock %} 
+

@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+
+<form name="register_form" action="/auth/register" method="post">
+  Enter usermail<input type="text" name="usermail" id="usermail">
+  <br/>Enter Employee Id<input type="text" name="empid" id="empid">
+  <br/>Enter Bank Role<input type="text" name="brole" id="brole">
+  <br>Enter password<input type="password" name="passw" id="passw">
+  <br>Confirm password<input type="password" name="cpassw" id="cpassw">
+  <input type="submit"name="button1" value="register">
+  </form>
+    
+{% endblock %}

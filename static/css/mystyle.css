@@ -1,0 +1,29 @@
+body{
+    background-image: linear-gradient(to top ,rgba(142, 198, 197,0),rgba(142, 198, 197,1));
+    background-repeat:no-repeat;
+}
+
+input
+{
+    width: 10%;
+    margin: 10px auto;
+    padding: 0px;
+    background: #f0e68c;
+    border:1px solid green;
+}
+
+.first-page{
+    align-content:center;
+     height: 100%;
+}
+
+.btn1{
+    color: black;
+    background-color: #FFC312;
+    width: 100px;
+}
+    
+.btn1:hover{
+    color: black;
+    background-color: white;
+}

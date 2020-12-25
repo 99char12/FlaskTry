@@ -22,5 +22,6 @@ python-jwt==3.3.0
 requests==2.25.1
 rsa==4.6
 six==1.15.0
+sseclient==0.0.27
 urllib3==1.26.2
 Werkzeug==1.0.1

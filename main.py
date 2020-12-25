@@ -12,7 +12,7 @@ def hello_world():
     #return render_template('firstPage.html')
 
 
-@app.route('/login')
+'''@app.route('/login')
 def login_to_world():
     #return "hello_world"
     return render_template('login.html')
@@ -62,9 +62,9 @@ def loan_income_predict():
     l=DataEntrySignin.showIncome()
     print(l)
     
-    return render_template("result.html" , data=l)
+    return render_template("result.html" , data=l)'''
 
           
 if __name__ == "__main__":
     #app.debug=True
-    app.run(port="5000")
+    app.run()

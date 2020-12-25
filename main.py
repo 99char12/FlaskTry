@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request, session
-from dataEntrySignin import DataEntrySignin
-from income import Income
+#from dataEntrySignin import DataEntrySignin
+#from income import Income
 import json
 
 app=Flask(__name__)

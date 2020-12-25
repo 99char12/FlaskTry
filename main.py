@@ -1,13 +1,14 @@
 from flask import Flask, render_template, request, session
 from dataEntrySignin import DataEntrySignin
 from income import Income
+import json
 
 app=Flask(__name__)
 app.secret_key="good"
 
 @app.route('/')
 def hello_world():
-    return "HI"
+    return {"true":["HI","BYE","Good","Bad"],1:3}
     #return render_template('firstPage.html')
 
 

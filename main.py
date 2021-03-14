@@ -12,14 +12,16 @@ vehicle = {}
 def hello_world():
     user = request.args.get('user')
     lat = request.args.get('lat')
-    vehicle[user] = lat  
+    lon = request.args.get('lon')
+    vehicle[user] = [lat,lon]  
     return "Update successful"
     #return render_template('firstPage.html')
 
 @app.route('/fetchDriver')
 def login_to_world():
     user = request.args.get('user')
-    return vehicle[user]
+    result = {"lat":vehicle[user][0],"lon":vehicle[user][1]}
+    return jsonify(result)
 
 '''@app.route('/register')
 def register_in_world():

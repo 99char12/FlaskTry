@@ -6,19 +6,21 @@ import json
 app=Flask(__name__)
 app.secret_key="good"
 
+vehicle = {}
+
 @app.route('/')
 def hello_world():
     user = request.args.get('user')
-    return jsonify({"user":user})
+    lat = request.args.get('lat')
+    vehicle[user] = lat  
     #return render_template('firstPage.html')
 
-
-'''@app.route('/login')
+@app.route('/fetchDriver')
 def login_to_world():
-    #return "hello_world"
-    return render_template('login.html')
+    user = request.args.get('user')
+    return vehicle[user]
 
-@app.route('/register')
+'''@app.route('/register')
 def register_in_world():
     #return "hello_world"
     return render_template('registration.html')

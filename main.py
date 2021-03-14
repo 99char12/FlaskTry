@@ -8,7 +8,8 @@ app.secret_key="good"
 
 @app.route('/')
 def hello_world():
-    return jsonify({"true":["HI","BYE","Good","Bad"],"1":"3"})
+    user = request.args.get('user')
+    return jsonify({"user":user})
     #return render_template('firstPage.html')
 
 
